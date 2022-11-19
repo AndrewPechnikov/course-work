@@ -1,13 +1,15 @@
-.menu {
-	display: flex;
-	color: #fff;
+.author-and-date {
 	font-family: "Inter";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 28px;
 
-	&__item:not(:last-child) {
-		margin-right: 24px;
+	&__name--focus {
+		color: $focus-color;
+	}
+
+	&__name--purple {
+		color: $purple-color;
 	}
 }

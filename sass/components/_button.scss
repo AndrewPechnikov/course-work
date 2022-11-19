@@ -1,0 +1,12 @@
+.button {
+	font-family: "Sen";
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 16px 48px;
+	background-color: $focus-color;
+
+	&--white {
+		background-color: white;
+	}
+}

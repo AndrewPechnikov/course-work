@@ -1,2 +1,11 @@
+@import "variables";
 @import "reset";
 @import "global";
+
+@import "components/description.scss";
+@import "components/author-and-date.scss";
+@import "components/section-sign.scss";
+@import "components/button";
+@import "components/header";
+@import "components/menu";
+@import "components/hero";

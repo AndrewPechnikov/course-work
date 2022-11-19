@@ -4,6 +4,15 @@
 	box-sizing: border-box;
 }
 
-.body {
-	font-family: Sen serif;
+body {
+	font-family: "Inter" serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.container {
+	max-width: $container-width;
+	margin-left: auto;
+	margin-right: auto;
 }
