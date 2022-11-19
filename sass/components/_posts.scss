@@ -1,0 +1,18 @@
+.posts {
+	display: flex;
+
+	&__title {
+		font-family: "Sen";
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 48px;
+		color: $main-color;
+
+		margin-bottom: 32px;
+	}
+
+	&__card {
+		margin-left: 32px;
+		margin-right: 64px;
+	}
+}

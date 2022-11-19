@@ -9,6 +9,8 @@
 
 	color: white;
 
+	margin-bottom: 128px;
+
 	&__container {
 		padding-bottom: 192px;
 		padding-right: 476px;
@@ -27,6 +29,9 @@
 	}
 
 	&__author-and-date {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 28px;
 		margin-bottom: 16px;
 	}
 

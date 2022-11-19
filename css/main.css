@@ -144,6 +144,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
+  color: #6d6e76;
 }
 
 .container {
@@ -162,10 +163,9 @@ body {
 
 .author-and-date {
   font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
 }
 .author-and-date__name--focus {
   color: #ffd050;
@@ -236,6 +236,7 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   color: white;
+  margin-bottom: 128px;
 }
 .hero__container {
   padding-bottom: 192px;
@@ -252,8 +253,44 @@ body {
   margin-bottom: 24px;
 }
 .hero__author-and-date {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
   margin-bottom: 16px;
 }
 .hero__description {
   margin-bottom: 48px;
+}
+
+.posts {
+  display: flex;
+}
+.posts__title {
+  font-family: "Sen";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #232536;
+  margin-bottom: 32px;
+}
+.posts__card {
+  margin-left: 32px;
+  margin-right: 64px;
+}
+
+.card {
+  width: 670px;
+}
+.card__image {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.card__author-and-date {
+  margin-bottom: 16px;
+}
+.card__title {
+  font-family: "Sen";
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 16px;
 }/*# sourceMappingURL=main.css.map */
