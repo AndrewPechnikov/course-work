@@ -1,0 +1,61 @@
+.all-posts {
+	// .all-posts__main-title-container
+
+	&__main-title-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	&__viev-all {
+		height: 2rem;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 28px;
+		color: $purple-color;
+		padding: 0px;
+		border: 0px;
+		background: none;
+
+		&:hover {
+			color: $focus-color;
+		}
+	}
+
+	// .all-posts__list
+
+	&__list {
+	}
+
+	// .all-posts__item
+
+	&__item {
+		padding-left: 32px;
+		padding-top: 32px;
+		padding-right: 115px;
+		padding-bottom: 25px;
+		&:hover {
+			background-color: $secondary-focus-color;
+		}
+	}
+
+	// .all-posts__title
+
+	&__title {
+		font-family: "Sen";
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 32px;
+		color: $main-color;
+	}
+}
+.author-and-date {
+	// .author-and-date__name
+
+	&__name {
+		// .author-and-date__name--purple
+
+		&--purple {
+		}
+	}
+}

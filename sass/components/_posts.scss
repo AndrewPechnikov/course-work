@@ -1,5 +1,9 @@
 .posts {
-	display: flex;
+	margin-bottom: 128px;
+
+	&__container {
+		display: flex;
+	}
 
 	&__title {
 		font-family: "Sen";
@@ -12,7 +16,6 @@
 	}
 
 	&__card {
-		margin-left: 32px;
-		margin-right: 64px;
+		margin-right: 32px;
 	}
 }
