@@ -1,0 +1,84 @@
+.about-us {
+	// .about-us__main
+
+	&__decoration-item {
+		position: absolute;
+		height: 23px;
+		top: -23px;
+		&:nth-child(1) {
+			position: absolute;
+			background-color: $focus-color;
+			width: 780px;
+			right: 280px;
+		}
+		&:nth-child(2) {
+			position: absolute;
+			background-color: $purple-color;
+			width: 280px;
+			right: 0px;
+		}
+	}
+
+	&__container {
+		position: relative;
+		display: flex;
+
+		padding-top: 96px;
+		padding-right: 108px;
+		padding-bottom: 96px;
+		padding-left: 80px;
+		background-color: $background-about-us;
+	}
+
+	&__main {
+		margin-right: 61px;
+		width: 515px;
+	}
+
+	&__section-sign {
+		margin-bottom: 24px;
+	}
+	// .about-us__title
+
+	&__title {
+		font-family: "Sen";
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 48px;
+		color: $main-color;
+		margin-bottom: 16px;
+		/* or 133% */
+	}
+
+	// .about-us__description
+
+	&__description {
+		margin-bottom: 16px;
+	}
+
+	&__read-more {
+		font-family: "Sen";
+		font-size: 18px;
+		line-height: 32px;
+		text-decoration: none;
+		&:hover {
+			color: $focus-color;
+		}
+	}
+
+	// .about-us__mission
+
+	&__mission {
+		width: 515px;
+	}
+
+	// .about-us__secondary-title
+
+	&__secondary-title {
+		font-family: "Sen";
+		font-size: 28px;
+		line-height: 40px;
+		color: $main-color;
+		margin-bottom: 16px;
+	}
+}
