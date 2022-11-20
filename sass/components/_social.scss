@@ -2,9 +2,10 @@
 	display: flex;
 	gap: 16px;
 	justify-content: center;
+	transition: 250ms;
 
 	&__icon:hover {
 		transform: scale(1.25);
-		transition: 200ms;
+		transition: 250ms;
 	}
 }
