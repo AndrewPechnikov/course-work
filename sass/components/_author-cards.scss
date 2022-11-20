@@ -1,0 +1,41 @@
+.author-cards {
+	display: flex;
+	gap: 32px;
+	justify-content: center;
+
+	&__card {
+		text-align: center;
+		padding: 40px 28px;
+		background-color: #f4f4f4;
+		width: 296px;
+	}
+
+	&__avatar {
+		border-radius: 50%;
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		font-family: "Sen";
+		font-size: 28px;
+		line-height: 40px;
+		letter-spacing: -1px;
+		color: #232536;
+	}
+
+	&__position {
+		font-family: "Inter";
+		font-size: 14px;
+		line-height: 20px;
+		color: #6d6e76;
+
+		padding: 0;
+		margin-bottom: 20px;
+	}
+
+	&__social {
+		display: flex;
+		gap: 16px;
+		justify-content: center;
+	}
+}
