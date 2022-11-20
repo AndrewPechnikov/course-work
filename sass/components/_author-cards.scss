@@ -8,6 +8,9 @@
 		padding: 40px 28px;
 		background-color: #f4f4f4;
 		width: 296px;
+		&:hover {
+			background-color: #fbf6ea;
+		}
 	}
 
 	&__avatar {
@@ -31,11 +34,5 @@
 
 		padding: 0;
 		margin-bottom: 20px;
-	}
-
-	&__social {
-		display: flex;
-		gap: 16px;
-		justify-content: center;
 	}
 }
