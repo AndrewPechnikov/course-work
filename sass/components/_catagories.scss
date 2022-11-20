@@ -1,0 +1,37 @@
+.catagoryes {
+	display: flex;
+	gap: 32px;
+	// .catagoryes__item
+
+	&__item {
+		padding: 32px;
+		border: 1px solid #6d6e76;
+		cursor: pointer;
+		&:hover {
+			background-color: $focus-color;
+			border-color: transparent;
+		}
+	}
+
+	// .catagoryes__icon-container
+
+	&__icon-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 48px;
+		height: 48px;
+		background-color: $secondary-focus-color;
+		border-radius: 16%;
+
+		margin-bottom: 16px;
+	}
+
+	&__title {
+		font-family: "Sen";
+		font-size: 28px;
+		line-height: 40px;
+		color: #232536;
+		margin-bottom: 4px;
+	}
+}
