@@ -1,5 +1,8 @@
 .list-of-authors {
-	margin-bottom: 96px;
+	&__container {
+		margin-bottom: 96px;
+	}
+
 	&__title {
 		font-family: "Sen";
 

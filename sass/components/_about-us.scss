@@ -1,6 +1,5 @@
 .about-us {
 	// .about-us__main
-	margin-bottom: 128px;
 
 	&__decoration-item {
 		position: absolute;
@@ -21,6 +20,8 @@
 	}
 
 	&__container {
+		margin-bottom: 128px;
+
 		position: relative;
 		display: flex;
 
