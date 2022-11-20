@@ -537,6 +537,12 @@ body {
   justify-content: center;
   transition: 250ms;
 }
+.social__icon {
+  fill: #232536;
+}
+.social__icon--footer {
+  fill: #6d6e76;
+}
 .social__icon:hover {
   transform: scale(1.25);
   transition: 250ms;
@@ -684,6 +690,81 @@ body {
   margin-bottom: 32px;
 }
 
+.form {
+  padding: 80px 64px;
+  display: flex;
+  background: rgba(255, 255, 255, 0.05);
+}
+.form__title {
+  font-family: "Sen";
+  font-size: 36px;
+  line-height: 48px;
+  color: white;
+  margin-right: 64px;
+  letter-spacing: -2px;
+  width: 562px;
+}
+.form__input-email {
+  width: 323px;
+  height: 56px;
+  background-color: transparent;
+  border: 1px solid #4c4c4c;
+  padding: 14px 25px;
+  margin-right: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+.form__button {
+  height: 56px;
+}
+
 .footer {
   background-color: #232536;
+}
+.footer__container {
+  padding: 57px 0;
+  display: grid;
+  grid-template-rows: 2fr 55px 255px 48px 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.footer__logo {
+  align-items: center;
+}
+.footer__menu {
+  align-items: center;
+  justify-content: end;
+}
+.footer__form {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.footer__contacts {
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  opacity: 0.7;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.footer__contacts-1 {
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.footer__contacts-2 {
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+.footer__social {
+  gap: 25px;
+  justify-content: end;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }/*# sourceMappingURL=main.css.map */

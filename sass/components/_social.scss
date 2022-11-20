@@ -4,8 +4,16 @@
 	justify-content: center;
 	transition: 250ms;
 
-	&__icon:hover {
-		transform: scale(1.25);
-		transition: 250ms;
+	&__icon {
+		fill: $main-color;
+
+		&--footer {
+			fill: $main-text-color;
+		}
+
+		&:hover {
+			transform: scale(1.25);
+			transition: 250ms;
+		}
 	}
 }
