@@ -1,0 +1,50 @@
+.special-post {
+	// .special-post__container
+	margin-bottom: 128px;
+
+	&__container {
+		position: relative;
+		display: flex;
+		justify-content: end;
+		height: 705px;
+	}
+
+	// .special-post__image
+
+	&__image {
+		position: absolute;
+		right: 331px;
+	}
+
+	&__text-container {
+		position: absolute;
+		top: 121px;
+
+		padding: 80px;
+		width: 706px;
+		background-color: white;
+	}
+	// .special-post__section-sign
+
+	&__section-sign {
+		margin-bottom: 24px;
+	}
+
+	// .special-post__title
+
+	&__title {
+		font-family: "Sen";
+		font-size: 48px;
+		line-height: 64px;
+		letter-spacing: -2px;
+		color: #232536;
+
+		margin-bottom: 16px;
+	}
+
+	// .special-post__description
+
+	&__description {
+		margin-bottom: 32px;
+	}
+}
