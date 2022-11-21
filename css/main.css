@@ -148,9 +148,21 @@ body {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1310px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (max-width: 1310px) {
+  .container {
+    max-width: 798px;
+  }
+}
+@media screen and (max-width: 798px) {
+  .container {
+    max-width: 405px;
+  }
 }
 
 .description {
@@ -158,7 +170,12 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 175%;
+}
+@media screen and (max-width: 798px) {
+  .description {
+    font-size: 13px;
+  }
 }
 
 .author-and-date {
@@ -207,15 +224,31 @@ body {
   align-items: center;
 }
 .header__logo {
-  margin-right: 621px;
+  margin-right: auto;
+}
+@media screen and (max-width: 798px) {
+  .header__logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 .header__menu {
   display: inline-block;
   margin-left: auto;
   margin-right: 32px;
 }
+@media screen and (max-width: 798px) {
+  .header__menu {
+    display: none !important;
+  }
+}
 .header__button {
   margin: 12px 0px;
+}
+@media screen and (max-width: 798px) {
+  .header__button {
+    display: none !important;
+  }
 }
 
 .menu {
@@ -245,20 +278,52 @@ body {
   padding-right: 476px;
   padding-top: 128px;
 }
+@media screen and (max-width: 1310px) {
+  .hero__container {
+    margin-bottom: 75px;
+    padding-bottom: 75px;
+    padding-right: 0px;
+    padding-top: 75px;
+  }
+}
 .hero__section-sign {
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
   margin-bottom: 24px;
 }
+.hero__section-sign--bold {
+  font-weight: 900;
+}
+@media screen and (max-width: 798px) {
+  .hero__section-sign {
+    font-size: 13px;
+  }
+}
 .hero__title {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 64px;
   margin-bottom: 24px;
+  font-family: "Sen";
+  font-size: 56px;
+  line-height: 114%;
+  letter-spacing: -2px;
+  color: #ffffff;
+}
+@media screen and (max-width: 798px) {
+  .hero__title {
+    font-size: 26px;
+    letter-spacing: -1px;
+  }
 }
 .hero__author-and-date {
   font-weight: 400;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 175%;
   margin-bottom: 16px;
+}
+@media screen and (max-width: 798px) {
+  .hero__author-and-date {
+    font-size: 13px;
+  }
 }
 .hero__description {
   margin-bottom: 48px;

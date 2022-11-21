@@ -9,16 +9,26 @@
 	}
 
 	&__logo {
-		margin-right: 621px;
+		margin-right: auto;
+		@media screen and (max-width: $tablet-width) {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
 	}
 
 	&__menu {
 		display: inline-block;
 		margin-left: auto;
 		margin-right: 32px;
+		@media screen and (max-width: $tablet-width) {
+			display: none !important;
+		}
 	}
 
 	&__button {
 		margin: 12px 0px;
+		@media screen and (max-width: $tablet-width) {
+			display: none !important;
+		}
 	}
 }
