@@ -1,14 +1,21 @@
 .feature {
-
 	&__container {
 		margin-bottom: 96px;
 
 		display: flex;
 		gap: 75px;
 		align-items: center;
+		@media screen and (max-width: $desktop-width) {
+			// flex-wrap: wrap;
+			gap: 25px;
+			flex-wrap: wrap;
+		}
 	}
 
 	&__text-content {
+		width: 100%;
+		text-align: center;
+		flex-shrink: 0;
 		margin-left: 14px;
 	}
 
@@ -26,6 +33,11 @@
 		line-height: 133%;
 
 		color: $main-text-color;
+
+		@media screen and (max-width: $desktop-width) {
+			// flex-wrap: wrap;
+			font-size: 2rem;
+		}
 	}
 
 	&__icon {

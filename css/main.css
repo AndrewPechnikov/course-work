@@ -782,7 +782,16 @@ body {
   gap: 75px;
   align-items: center;
 }
+@media screen and (max-width: 1310px) {
+  .feature__container {
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+}
 .feature__text-content {
+  width: 100%;
+  text-align: center;
+  flex-shrink: 0;
   margin-left: 14px;
 }
 .feature__sign {
@@ -797,6 +806,11 @@ body {
   font-size: 1.5rem;
   line-height: 133%;
   color: #6d6e76;
+}
+@media screen and (max-width: 1310px) {
+  .feature__title {
+    font-size: 2rem;
+  }
 }
 .feature__icon {
   opacity: 0.8;
