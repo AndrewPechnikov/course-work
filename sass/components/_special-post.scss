@@ -1,5 +1,4 @@
 .special-post {
-	// .special-post__container
 
 	&__container {
 		margin-bottom: 128px;
@@ -8,13 +7,21 @@
 		display: flex;
 		justify-content: end;
 		height: 705px;
+
+		@media screen and (max-width: $desktop-width) {			
+			margin-bottom: 64px;
+			height: 550px;
+		}
 	}
 
-	// .special-post__image
 
 	&__image {
 		position: absolute;
 		right: 331px;
+		@media screen and (max-width: $desktop-width) {			
+			right: 150px;
+			height: 550px;
+		}
 	}
 
 	&__text-container {
@@ -24,26 +31,27 @@
 		padding: 80px;
 		width: 706px;
 		background-color: white;
+		
+		@media screen and (max-width: $desktop-width) {			
+			padding: 32px;
+			width: 550px;
+			top:
+		}
 	}
-	// .special-post__section-sign
 
 	&__section-sign {
 		margin-bottom: 24px;
 	}
 
-	// .special-post__title
-
 	&__title {
 		font-family: "Sen";
-		font-size: 48px;
-		line-height: 64px;
+		font-size: 3rem;
+		line-height: 133%;
 		letter-spacing: -2px;
-		color: #232536;
+		color: $main-color;
 
 		margin-bottom: 16px;
 	}
-
-	// .special-post__description
 
 	&__description {
 		margin-bottom: 32px;

@@ -1,5 +1,4 @@
 .chose-a-catagory {
-	// .chose-a-catagory__container
 
 	&__container {
 		margin-bottom: 128px;
@@ -7,16 +6,14 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+
+		@media screen and (max-width: $desktop-width) {			
+			margin-bottom: 64px;
+		}
 	}
 
-	// .chose-a-catagory__title
-
 	&__title {
-		font-family: "Sen";
-
-		font-size: 36px;
-		line-height: 48px;
-		color: $main-color;
+		@include titleFont;
 		margin-bottom: 48px;
 	}
 }

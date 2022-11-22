@@ -1,596 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Sen:wght@700&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="css\main.min.css" />
 
-		<title>Document</title>
-	</head>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Sen:wght@700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="css\main.min.css" />
 
-	<body>
-		<header class="header">
-			<div class="container header__container">
-				<img class="header__logo logo" src="img\Logo.svg" alt="" />
-				<nav>
-					<ul class="header__menu menu">
-						<li class="menu__item">Home</li>
-						<li class="menu__item">Blog</li>
-						<li class="menu__item">About Us</li>
-						<li class="menu__item">Contact us</li>
-					</ul>
-				</nav>
-				<button class="button button--white header__button">Subscribe</button>
+	<title>Document</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container header__container">
+			<img class="header__logo logo" src="img\Logo.svg" alt="" />
+			<nav>
+				<ul class="header__menu menu">
+					<li class="menu__item">Home</li>
+					<li class="menu__item">Blog</li>
+					<li class="menu__item">About Us</li>
+					<li class="menu__item">Contact us</li>
+				</ul>
+			</nav>
+			<button class="button button--white header__button">Subscribe</button>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="container hero__container">
+				<p class="section-sign hero__section-sign">
+					Posted on <span class="hero__section-sign--bold">startup</span>
+				</p>
+				<h1 class="hero__title">
+					Step-by-step guide to choosing great font pairs
+				</h1>
+				<p class="author-and-date hero__author-and-date">
+					By <span class="author-and-date__name--focus">James West</span> |
+					May 23, 2022
+				</p>
+				<p class="description hero__description">
+					Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+					cupidatat non proident.
+				</p>
+				<button class="button">Read More ></button>
 			</div>
-		</header>
+		</section>
 
-		<main>
-			<section class="hero">
-				<div class="container hero__container">
-					<p class="section-sign hero__section-sign">
-						Posted on <span class="hero__section-sign--bold">startup</span>
-					</p>
-					<h1 class="hero__title">
-						Step-by-step guide to choosing great font pairs
-					</h1>
-					<p class="author-and-date hero__author-and-date">
-						By <span class="author-and-date__name--focus">James West</span> |
-						May 23, 2022
-					</p>
-					<p class="description hero__description">
-						Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-						cupidatat non proident.
-					</p>
-					<button class="button">Read More ></button>
-				</div>
-			</section>
-
-			<section class="posts">
-				<div class="container posts__container">
-					<div class="posts__featured-post">
-						<h3 class="posts__title">Featured Post</h3>
-						<div class="card posts__card">
-							<img
-								class="card__image"
-								src="img\white-concrete-building-1838640.jpg"
-								alt=""
-							/>
-							<p class="author-and-date card__author-and-date">
-								By <span class="author-and-date__name--purple">John Doe</span> l
-								May 23, 2022
-							</p>
-							<h4 class="card__title">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod tempor.
-							</h4>
-							<p class="description card__description">
-								Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-								cupidatat non proident.
-							</p>
-
-							<button class="button">Read More ></button>
-						</div>
-					</div>
-
-					<div class="posts__all-posts all-posts">
-						<div class="all-posts__main-title-container posts__title">
-							<h3>All Posts</h3>
-							<button class="all-posts__viev-all">View All</button>
-						</div>
-
-						<ul class="all-posts__list">
-							<li class="all-posts__item">
-								<p class="author-and-date">
-									By
-									<span class="author-and-date__name--purple">John Doe</span> l
-									Aug 23, 2021
-								</p>
-								<h4 class="all-posts__title">
-									8 Figma design systems that you can download for free today.
-								</h4>
-							</li>
-							<li class="all-posts__item">
-								<p class="author-and-date">
-									By
-									<span class="author-and-date__name--purple">John Doe</span> l
-									Aug 23, 2021
-								</p>
-								<h4 class="all-posts__title">
-									8 Figma design systems that you can download for free today.
-								</h4>
-							</li>
-							<li class="all-posts__item">
-								<p class="author-and-date">
-									By
-									<span class="author-and-date__name--purple">John Doe</span> l
-									Aug 23, 2021
-								</p>
-								<h4 class="all-posts__title">
-									8 Figma design systems that you can download for free today.
-								</h4>
-							</li>
-							<li class="all-posts__item">
-								<p class="author-and-date">
-									By
-									<span class="author-and-date__name--purple">John Doe</span> l
-									Aug 23, 2021
-								</p>
-								<h4 class="all-posts__title">
-									8 Figma design systems that you can download for free today.
-								</h4>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			<section class="about-us">
-				<div class="container about-us__container">
-					<div class="about-us__decoration-item"></div>
-					<div class="about-us__decoration-item"></div>
-
-					<div class="about-us__main">
-						<p class="section-sign about-us__section-sign">ABOUT US</p>
-						<h2 class="about-us__title">
-							We are a community of content writers who share their learnings
-						</h2>
-						<p class="description about-us__description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		<section class="posts">
+			<div class="container posts__container">
+				<div class="posts__featured-post">
+					<h3 class="posts__title">Featured Post</h3>
+					<div class="card posts__card">
+						<img class="card__image" src="img\white-concrete-building-1838640.jpg" alt="" />
+						<p class="author-and-date card__author-and-date">
+							By <span class="author-and-date__name--purple">John Doe</span> l
+							May 23, 2022
 						</p>
-						<a href="" class="about-us__read-more">Read More ></a>
-					</div>
-					<div class="about-us__mission">
-						<p class="section-sign about-us__section-sign">Our mision</p>
-						<h4 class="about-us__secondary-title">
-							Creating valuable content for creatives all around the world
-						</h4>
-						<p class="description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-							enim ad minim veniam, quis nostrud exercitation ullamco laboris
-							nisi ut aliquip ex ea commodo consequat.
-						</p>
-					</div>
-				</div>
-			</section>
-
-			<section class="chose-a-catagory">
-				<div class="container chose-a-catagory__container">
-					<h2 class="chose-a-catagory__title">Choose A Catagory</h2>
-					<ul class="catagoryes">
-						<li class="catagoryes__item">
-							<div class="catagoryes__icon-container">
-								<svg width="48px" height="48px">
-									<use
-										href="./img/icons/symbol-defs.svg#icon-chose-a-catagory-1"
-									></use>
-								</svg>
-							</div>
-							<h3 class="catagoryes__title">Business</h3>
-							<p class="description">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-							</p>
-						</li>
-						<li class="catagoryes__item">
-							<div class="catagoryes__icon-container">
-								<svg width="23px" height="23px">
-									<use
-										href="./img/icons/symbol-defs.svg#icon-chose-a-catagory-2"
-									></use>
-								</svg>
-							</div>
-
-							<h3 class="catagoryes__title">Startup</h3>
-							<p class="description">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-							</p>
-						</li>
-						<li class="catagoryes__item">
-							<div class="catagoryes__icon-container">
-								<svg width="48px" height="48px">
-									<use
-										href="./img/icons/symbol-defs.svg#icon-chose-a-catagory-3"
-									></use>
-								</svg>
-							</div>
-							<h3 class="catagoryes__title">Economy</h3>
-							<p class="description">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-							</p>
-						</li>
-						<li class="catagoryes__item">
-							<div class="catagoryes__icon-container">
-								<svg width="48px" height="48px">
-									<use
-										href="./img/icons/symbol-defs.svg#icon-chose-a-catagory-4"
-									></use>
-								</svg>
-							</div>
-							<h3 class="catagoryes__title">Technology</h3>
-							<p class="description">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-							</p>
-						</li>
-					</ul>
-				</div>
-			</section>
-
-			<section class="special-post">
-				<div class="container special-post__container">
-					<img
-						class="special-post__image"
-						src="/img/close-up-photography-of-man-wearing-sunglasses-1212984.jpg"
-						alt=""
-					/>
-					<div class="special-post__text-container">
-						<p class="section-sign special-post__section-sign">
-							Why we started
-						</p>
-						<h2 class="special-post__title">
-							It started out as a simple idea and evolved into our passion
-						</h2>
-						<p class="description special-post__description">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-							enim ad minim veniam, quis nostrud exercitation ullamco laboris
-							nisi ut aliquip.
-						</p>
-						<button class="button">Discover our story ></button>
-					</div>
-				</div>
-			</section>
-
-			<section class="list-of-authors">
-				<div class="container list-of-authors__container">
-					<h2 class="list-of-authors__title">List of Authors</h2>
-					<ul class="author-cards">
-						<li class="author-cards__card">
-							<img
-								class="author-cards__avatar"
-								src="/img/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.jpg"
-								alt=""
-							/>
-							<h3 class="author-cards__title">Floyd Miles</h3>
-							<p class="author-cards__position">Content Writer @Company</p>
-							<ul class="author-cards__social social">
-								<li>
-									<a href="#">
-										<svg width="16px" height="16px" class="social__icon">
-											<use
-												href="/img/icons/symbol-defs.svg#icon-facebook"
-											></use>
-										</svg>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<svg width="16px" height="16px" class="social__icon">
-											<use href="/img/icons/symbol-defs.svg#icon-twitter"></use>
-										</svg>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<svg width="16px" height="16px" class="social__icon">
-											<use
-												href="/img/icons/symbol-defs.svg#icon-instagram"
-											></use>
-										</svg>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<svg width="16px" height="16px" class="social__icon">
-											<use
-												href="/img/icons/symbol-defs.svg#icon-linkedin"
-											></use>
-										</svg>
-									</a>
-								</li>
-							</ul>
-						</li>
-						<li class="author-cards__card">
-							<img
-								class="author-cards__avatar"
-								src="/img/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.jpg"
-								alt=""
-							/>
-							<h3 class="author-cards__title">Dianne Russell</h3>
-							<p class="author-cards__position">Content Writer @Company</p>
-							<ul class="author-cards__social social">
-								<li>
-									<a href="#">
-										<svg width="16px" height="16px" class="social__icon">
-											<use
-												href="/img/icons/symbol-defs.svg#icon-facebook"
-											></use>
-										</svg>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<svg width="16px" height="16px" class="social__icon">
-											<use href="/img/icons/symbol-defs.svg#icon-twitter"></use>
-										</svg>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<svg width="16px" height="16px" class="social__icon">
-											<use
-												href="/img/icons/symbol-defs.svg#icon-instagram"
-											></use>
-										</svg>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<svg width="16px" height="16px" class="social__icon">
-											<use
-												href="/img/icons/symbol-defs.svg#icon-linkedin"
-											></use>
-										</svg>
-									</a>
-								</li>
-							</ul>
-						</li>
-						<li class="author-cards__card">
-							<img
-								class="author-cards__avatar"
-								src="/img/fashion-woman-cute-shoes-5704849.jpg"
-								alt=""
-							/>
-							<h3 class="author-cards__title">Jenny Wilson</h3>
-							<p class="author-cards__position">Content Writer @Company</p>
-							<ul class="author-cards__social social">
-								<li>
-									<a href="#">
-										<svg width="16px" height="16px" class="social__icon">
-											<use
-												href="/img/icons/symbol-defs.svg#icon-facebook"
-											></use>
-										</svg>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<svg width="16px" height="16px" class="social__icon">
-											<use href="/img/icons/symbol-defs.svg#icon-twitter"></use>
-										</svg>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<svg width="16px" height="16px" class="social__icon">
-											<use
-												href="/img/icons/symbol-defs.svg#icon-instagram"
-											></use>
-										</svg>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<svg width="16px" height="16px" class="social__icon">
-											<use
-												href="/img/icons/symbol-defs.svg#icon-linkedin"
-											></use>
-										</svg>
-									</a>
-								</li>
-							</ul>
-						</li>
-						<li class="author-cards__card">
-							<img
-								class="author-cards__avatar"
-								src="/img/content-baker-with-delicious-puff-in-cafeteria-6205509.jpg"
-								alt=""
-							/>
-							<h3 class="author-cards__title">Leslie Alexander</h3>
-							<p class="author-cards__position">Content Writer @Company</p>
-							<ul class="author-cards__social social">
-								<li>
-									<a href="#">
-										<svg width="16px" height="16px" class="social__icon">
-											<use
-												href="/img/icons/symbol-defs.svg#icon-facebook"
-											></use>
-										</svg>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<svg width="16px" height="16px" class="social__icon">
-											<use href="/img/icons/symbol-defs.svg#icon-twitter"></use>
-										</svg>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<svg width="16px" height="16px" class="social__icon">
-											<use
-												href="/img/icons/symbol-defs.svg#icon-instagram"
-											></use>
-										</svg>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<svg width="16px" height="16px" class="social__icon">
-											<use
-												href="/img/icons/symbol-defs.svg#icon-linkedin"
-											></use>
-										</svg>
-									</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</section>
-
-			<section class="feature">
-				<div class="container feature__container">
-					<div class="feature__text-content">
-						<p class="feature__sign">We are</p>
-						<h2 class="feature__title">Featured in</h2>
-					</div>
-
-					<svg width="160px" height="32px" class="feature__icon">
-						<use href="/img/icons/symbol-defs.svg#icon-feature-1"></use>
-					</svg>
-					<svg width="135px" height="32px" class="feature__icon">
-						<use href="/img/icons/symbol-defs.svg#icon-feature-2"></use>
-					</svg>
-					<svg width="135px" height="32px" class="feature__icon">
-						<use href="/img/icons/symbol-defs.svg#icon-feature-3"></use>
-					</svg>
-					<svg width="155px" height="32px" class="feature__icon">
-						<use href="/img/icons/symbol-defs.svg#icon-feature-4"></use>
-					</svg>
-					<svg width="135px" height="32px" class="feature__icon">
-						<use href="/img/icons/symbol-defs.svg#icon-feature-5"></use>
-					</svg>
-				</div>
-			</section>
-
-			<section class="reviews">
-				<div class="container reviews__container">
-					<div class="reviews__main-content">
-						<p class="section-sign reviews__section-sign">TESTIMONIALS</p>
-						<h2 class="reviews__title">What people say about our blog</h2>
-						<p class="description">
+						<h4 class="card__title">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 							eiusmod tempor.
+						</h4>
+						<p class="description card__description">
+							Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident.
 						</p>
-					</div>
-					<div class="reviews__secondary-content">
-						<p class="reviews__review">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</p>
-						<div class="reviews__reviewer reviewer">
-							<img src="/img/slider-icon.jpg" alt="" class="reviewer__avatar" />
-							<div class="reviewer__text-content">
-								<p class="reviewer__name">Jonathan Vallem</p>
-								<p class="reviewer__adress">New york, USA</p>
-							</div>
-							<div class="reviews__arrow-container">
-								<svg class="reviews__arrow" width="48px" height="48px">
-									<use href="./img/icons/symbol-defs.svg#icon-arrow"></use>
-								</svg>
-							</div>
-							<div class="reviews__arrow-container">
-								<svg
-									class="reviews__arrow reviews__arrow--right"
-									width="48px"
-									height="48px"
-								>
-									<use href="./img/icons/symbol-defs.svg#icon-arrow"></use>
-								</svg>
-							</div>
-						</div>
+
+						<button class="button">Read More ></button>
 					</div>
 				</div>
-			</section>
 
-			<section class="join">
-				<div class="container join__container">
-					<h2 class="join__title">Join our team to be a part of our story</h2>
-					<p class="description join__description">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt.
-					</p>
-					<button class="button">Join Now</button>
-				</div>
-			</section>
-		</main>
+				<div class="posts__all-posts all-posts">
+					<div class="all-posts__main-title-container posts__title">
+						<h3>All Posts</h3>
+						<button class="all-posts__view-all">View All</button>
+					</div>
 
-		<footer class="footer">
-			<div class="container footer__container">
-				<img class="footer__logo logo" src="img\Logo.svg" alt="" />
-				<nav>
-					<ul class="footer__menu menu">
-						<li class="menu__item">Home</li>
-						<li class="menu__item">Blog</li>
-						<li class="menu__item">About Us</li>
-						<li class="menu__item">Contact us</li>
+					<ul class="all-posts__list">
+						<li class="all-posts__item">
+							<p class="author-and-date">
+								By
+								<span class="author-and-date__name--purple">John Doe</span> l
+								Aug 23, 2021
+							</p>
+							<h4 class="all-posts__title">
+								8 Figma design systems that you can download for free today.
+							</h4>
+						</li>
+						<li class="all-posts__item">
+							<p class="author-and-date">
+								By
+								<span class="author-and-date__name--purple">John Doe</span> l
+								Aug 23, 2021
+							</p>
+							<h4 class="all-posts__title">
+								8 Figma design systems that you can download for free today.
+							</h4>
+						</li>
+						<li class="all-posts__item">
+							<p class="author-and-date">
+								By
+								<span class="author-and-date__name--purple">John Doe</span> l
+								Aug 23, 2021
+							</p>
+							<h4 class="all-posts__title">
+								8 Figma design systems that you can download for free today.
+							</h4>
+						</li>
+						<li class="all-posts__item">
+							<p class="author-and-date">
+								By
+								<span class="author-and-date__name--purple">John Doe</span> l
+								Aug 23, 2021
+							</p>
+							<h4 class="all-posts__title">
+								8 Figma design systems that you can download for free today.
+							</h4>
+						</li>
 					</ul>
-				</nav>
-				<form class="footer__form form" action="">
-					<h2 class="form__title">
-						Subscribe to our news letter to get latest updates and news
+				</div>
+			</div>
+		</section>
+
+		<section class="about-us">
+			<div class="container about-us__container">
+				<div class="about-us__decoration-item"></div>
+				<div class="about-us__decoration-item"></div>
+
+				<div class="about-us__main">
+					<p class="section-sign about-us__section-sign">ABOUT US</p>
+					<h2 class="about-us__title">
+						We are a community of content writers who share their learnings
 					</h2>
-					<input
-						name="email"
-						placeholder="Enter Your Email"
-						type="email"
-						class="form__input-email"
-					/>
-					<button type="submit" class="button form__button">Subscribe</button>
-				</form>
-				<p class="footer__contacts-1 footer__contacts">
-					Finstreet 118 2561 Fintown
-				</p>
-				<p class="footer__contacts footer__contacts-2">
-					Hello@finsweet.com 020 7993 2905
-				</p>
-				<ul class="footer__social social">
-					<li>
-						<a href="#">
-							<svg
-								width="16px"
-								height="16px"
-								class="social__icon social__icon--footer"
-							>
-								<use href="/img/icons/symbol-defs.svg#icon-facebook"></use>
+					<p class="description about-us__description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+					<a href="" class="about-us__read-more">Read More ></a>
+				</div>
+				<div class="about-us__mission">
+					<p class="section-sign about-us__section-sign">Our mision</p>
+					<h4 class="about-us__secondary-title">
+						Creating valuable content for creatives all around the world
+					</h4>
+					<p class="description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+						enim ad minim veniam, quis nostrud exercitation ullamco laboris
+						nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="chose-a-catagory">
+			<div class="container chose-a-catagory__container">
+				<h2 class="chose-a-catagory__title">Choose A Catagory</h2>
+				<ul class="catagoryes">
+					<li class="catagoryes__item">
+						<div class="catagoryes__icon-container">
+							<svg width="48px" height="48px">
+								<use href="./img/icons/symbol-defs.svg#icon-chose-a-catagory-1"></use>
 							</svg>
-						</a>
+						</div>
+						<h3 class="catagoryes__title">Business</h3>
+						<p class="description catagoryes__description">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+						</p>
 					</li>
-					<li>
-						<a href="#">
-							<svg
-								width="16px"
-								height="16px"
-								class="social__icon social__icon--footer"
-							>
-								<use href="/img/icons/symbol-defs.svg#icon-twitter"></use>
+					<li class="catagoryes__item">
+						<div class="catagoryes__icon-container">
+							<svg width="23px" height="23px">
+								<use href="./img/icons/symbol-defs.svg#icon-chose-a-catagory-2"></use>
 							</svg>
-						</a>
+						</div>
+
+						<h3 class="catagoryes__title">Startup</h3>
+						<p class="description catagoryes__description">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+						</p>
 					</li>
-					<li>
-						<a href="#">
-							<svg
-								width="16px"
-								height="16px"
-								class="social__icon social__icon--footer"
-							>
-								<use href="/img/icons/symbol-defs.svg#icon-instagram"></use>
+					<li class="catagoryes__item">
+						<div class="catagoryes__icon-container">
+							<svg width="48px" height="48px">
+								<use href="./img/icons/symbol-defs.svg#icon-chose-a-catagory-3"></use>
 							</svg>
-						</a>
+						</div>
+						<h3 class="catagoryes__title">Economy</h3>
+						<p class="description catagoryes__description">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+						</p>
 					</li>
-					<li>
-						<a href="#">
-							<svg
-								width="16px"
-								height="16px"
-								class="social__icon social__icon--footer"
-							>
-								<use href="/img/icons/symbol-defs.svg#icon-linkedin"></use>
+					<li class="catagoryes__item">
+						<div class="catagoryes__icon-container">
+							<svg width="48px" height="48px">
+								<use href="./img/icons/symbol-defs.svg#icon-chose-a-catagory-4"></use>
 							</svg>
-						</a>
+						</div>
+						<h3 class="catagoryes__title">Technology</h3>
+						<p class="description catagoryes__description">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+						</p>
 					</li>
 				</ul>
 			</div>
-		</footer>
-	</body>
+		</section>
+
+		<section class="special-post">
+			<div class="container special-post__container">
+				<img class="special-post__image" src="/img/close-up-photography-of-man-wearing-sunglasses-1212984.jpg"
+					alt="" />
+				<div class="special-post__text-container">
+					<p class="section-sign special-post__section-sign">
+						Why we started
+					</p>
+					<h2 class="special-post__title">
+						It started out as a simple idea and evolved into our passion
+					</h2>
+					<p class="description special-post__description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+						enim ad minim veniam, quis nostrud exercitation ullamco laboris
+						nisi ut aliquip.
+					</p>
+					<button class="button">Discover our story ></button>
+				</div>
+			</div>
+		</section>
+
+		<section class="list-of-authors">
+			<div class="container list-of-authors__container">
+				<h2 class="list-of-authors__title">List of Authors</h2>
+				<ul class="author-cards">
+					<li class="author-cards__card">
+						<img class="author-cards__avatar"
+							src="/img/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.jpg" alt="" />
+						<h3 class="author-cards__title">Floyd Miles</h3>
+						<p class="author-cards__position">Content Writer @Company</p>
+						<ul class="author-cards__social social">
+							<li>
+								<a href="#">
+									<svg width="16px" height="16px" class="social__icon">
+										<use href="/img/icons/symbol-defs.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg width="16px" height="16px" class="social__icon">
+										<use href="/img/icons/symbol-defs.svg#icon-twitter"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg width="16px" height="16px" class="social__icon">
+										<use href="/img/icons/symbol-defs.svg#icon-instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg width="16px" height="16px" class="social__icon">
+										<use href="/img/icons/symbol-defs.svg#icon-linkedin"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="author-cards__card">
+						<img class="author-cards__avatar"
+							src="/img/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.jpg" alt="" />
+						<h3 class="author-cards__title">Dianne Russell</h3>
+						<p class="author-cards__position">Content Writer @Company</p>
+						<ul class="author-cards__social social">
+							<li>
+								<a href="#">
+									<svg width="16px" height="16px" class="social__icon">
+										<use href="/img/icons/symbol-defs.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg width="16px" height="16px" class="social__icon">
+										<use href="/img/icons/symbol-defs.svg#icon-twitter"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg width="16px" height="16px" class="social__icon">
+										<use href="/img/icons/symbol-defs.svg#icon-instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg width="16px" height="16px" class="social__icon">
+										<use href="/img/icons/symbol-defs.svg#icon-linkedin"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="author-cards__card">
+						<img class="author-cards__avatar" src="/img/fashion-woman-cute-shoes-5704849.jpg" alt="" />
+						<h3 class="author-cards__title">Jenny Wilson</h3>
+						<p class="author-cards__position">Content Writer @Company</p>
+						<ul class="author-cards__social social">
+							<li>
+								<a href="#">
+									<svg width="16px" height="16px" class="social__icon">
+										<use href="/img/icons/symbol-defs.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg width="16px" height="16px" class="social__icon">
+										<use href="/img/icons/symbol-defs.svg#icon-twitter"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg width="16px" height="16px" class="social__icon">
+										<use href="/img/icons/symbol-defs.svg#icon-instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg width="16px" height="16px" class="social__icon">
+										<use href="/img/icons/symbol-defs.svg#icon-linkedin"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="author-cards__card">
+						<img class="author-cards__avatar"
+							src="/img/content-baker-with-delicious-puff-in-cafeteria-6205509.jpg" alt="" />
+						<h3 class="author-cards__title">Leslie Alexander</h3>
+						<p class="author-cards__position">Content Writer @Company</p>
+						<ul class="author-cards__social social">
+							<li>
+								<a href="#">
+									<svg width="16px" height="16px" class="social__icon">
+										<use href="/img/icons/symbol-defs.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg width="16px" height="16px" class="social__icon">
+										<use href="/img/icons/symbol-defs.svg#icon-twitter"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg width="16px" height="16px" class="social__icon">
+										<use href="/img/icons/symbol-defs.svg#icon-instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg width="16px" height="16px" class="social__icon">
+										<use href="/img/icons/symbol-defs.svg#icon-linkedin"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="feature">
+			<div class="container feature__container">
+				<div class="feature__text-content">
+					<p class="feature__sign">We are</p>
+					<h2 class="feature__title">Featured in</h2>
+				</div>
+
+				<svg width="160px" height="32px" class="feature__icon">
+					<use href="/img/icons/symbol-defs.svg#icon-feature-1"></use>
+				</svg>
+				<svg width="135px" height="32px" class="feature__icon">
+					<use href="/img/icons/symbol-defs.svg#icon-feature-2"></use>
+				</svg>
+				<svg width="135px" height="32px" class="feature__icon">
+					<use href="/img/icons/symbol-defs.svg#icon-feature-3"></use>
+				</svg>
+				<svg width="155px" height="32px" class="feature__icon">
+					<use href="/img/icons/symbol-defs.svg#icon-feature-4"></use>
+				</svg>
+				<svg width="135px" height="32px" class="feature__icon">
+					<use href="/img/icons/symbol-defs.svg#icon-feature-5"></use>
+				</svg>
+			</div>
+		</section>
+
+		<section class="reviews">
+			<div class="container reviews__container">
+				<div class="reviews__main-content">
+					<p class="section-sign reviews__section-sign">TESTIMONIALS</p>
+					<h2 class="reviews__title">What people say about our blog</h2>
+					<p class="description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor.
+					</p>
+				</div>
+				<div class="reviews__secondary-content">
+					<p class="reviews__review">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+					<div class="reviews__reviewer reviewer">
+						<img src="/img/slider-icon.jpg" alt="" class="reviewer__avatar" />
+						<div class="reviewer__text-content">
+							<p class="reviewer__name">Jonathan Vallem</p>
+							<p class="reviewer__adress">New york, USA</p>
+						</div>
+						<div class="reviews__arrow-container">
+							<svg class="reviews__arrow" width="48px" height="48px">
+								<use href="./img/icons/symbol-defs.svg#icon-arrow"></use>
+							</svg>
+						</div>
+						<div class="reviews__arrow-container">
+							<svg class="reviews__arrow reviews__arrow--right" width="48px" height="48px">
+								<use href="./img/icons/symbol-defs.svg#icon-arrow"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="join">
+			<div class="container join__container">
+				<h2 class="join__title">Join our team to be a part of our story</h2>
+				<p class="description join__description">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt.
+				</p>
+				<button class="button">Join Now</button>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container footer__container">
+			<img class="footer__logo logo" src="img\Logo.svg" alt="" />
+			<nav>
+				<ul class="footer__menu menu">
+					<li class="menu__item">Home</li>
+					<li class="menu__item">Blog</li>
+					<li class="menu__item">About Us</li>
+					<li class="menu__item">Contact us</li>
+				</ul>
+			</nav>
+			<form class="footer__form form" action="">
+				<h2 class="form__title">
+					Subscribe to our news letter to get latest updates and news
+				</h2>
+				<input name="email" placeholder="Enter Your Email" type="email" class="form__input-email" />
+				<button type="submit" class="button form__button">Subscribe</button>
+			</form>
+			<p class="footer__contacts-1 footer__contacts">
+				Finstreet 118 2561 Fintown
+			</p>
+			<p class="footer__contacts footer__contacts-2">
+				Hello@finsweet.com 020 7993 2905
+			</p>
+			<ul class="footer__social social">
+				<li>
+					<a href="#">
+						<svg width="16px" height="16px" class="social__icon social__icon--footer">
+							<use href="/img/icons/symbol-defs.svg#icon-facebook"></use>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg width="16px" height="16px" class="social__icon social__icon--footer">
+							<use href="/img/icons/symbol-defs.svg#icon-twitter"></use>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg width="16px" height="16px" class="social__icon social__icon--footer">
+							<use href="/img/icons/symbol-defs.svg#icon-instagram"></use>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg width="16px" height="16px" class="social__icon social__icon--footer">
+							<use href="/img/icons/symbol-defs.svg#icon-linkedin"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+
 </html>

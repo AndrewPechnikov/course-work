@@ -2,7 +2,7 @@
 	&__container {
 		text-align: center;
 		margin-bottom: 128px;
-		width: 415px;
+		width: 444px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -10,15 +10,8 @@
 	// .join__title
 
 	&__title {
-		font-family: "Sen";
-
-		font-size: 36px;
-
-		letter-spacing: -2px;
-
-		/* Black */
-
-		color: #232536;
+		@include titleFont;
+		width: 100%;
 
 		margin-bottom: 16px;
 	}

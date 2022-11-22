@@ -4,16 +4,9 @@
 	}
 
 	&__title {
-		font-family: "Sen";
-
-		font-size: 36px;
-		line-height: 48px;
-
-		letter-spacing: -2px;
-		color: #232536;
+		@include titleFont;
 
 		margin-bottom: 48px;
-
 		text-align: center;
 	}
 }

@@ -1,58 +1,99 @@
 .about-us {
-	// .about-us__main
 
 	&__decoration-item {
 		position: absolute;
 		height: 23px;
 		top: -23px;
+
 		&:nth-child(1) {
 			position: absolute;
 			background-color: $focus-color;
 			width: 780px;
 			right: 280px;
 		}
+
 		&:nth-child(2) {
 			position: absolute;
 			background-color: $purple-color;
 			width: 280px;
 			right: 0px;
 		}
+
+		@media screen and (max-width: $desktop-width) {
+			height: 12px;
+			top: -12px;
+
+			&:nth-child(1) {				
+				width: 390px;
+				right: 140px;
+			}
+
+			&:nth-child(2) {
+				width: 140px;
+			}
+			
+		}
+
+		@media screen and (max-width: $tablet-width) {
+			height: 8px;
+			top: -8px;
+			
+			&:nth-child(1) {				
+				width: 190px;
+				right: 70px;
+			}
+
+			&:nth-child(2) {
+				width: 70px;
+			}			
+		}
+
 	}
 
 	&__container {
-		margin-bottom: 128px;
-
 		position: relative;
 		display: flex;
 
-		padding-top: 96px;
+		margin-bottom: 128px;
+		
 		padding-right: 108px;
 		padding-bottom: 96px;
 		padding-left: 80px;
+
 		background-color: $background-about-us;
+
+		@media screen and (max-width: $desktop-width) {
+			padding: 0;
+			padding-top: 32px;
+			padding-bottom: 32px;
+			margin-bottom: 64px;
+
+			flex-direction: column;
+			align-items: center;
+			gap:32px
+			
+		}
+
 	}
 
 	&__main {
 		margin-right: 61px;
-		width: 515px;
+		width: 494px;
+		@media screen and (max-width: $desktop-width) {			
+			width:80%;
+			margin-right: 0px;
+		}
 	}
 
 	&__section-sign {
 		margin-bottom: 24px;
 	}
-	// .about-us__title
 
 	&__title {
-		font-family: "Sen";
-		font-weight: 700;
-		font-size: 36px;
-		line-height: 48px;
-		color: $main-color;
+		@include titleFont;
 		margin-bottom: 16px;
-		/* or 133% */
+		
 	}
-
-	// .about-us__description
 
 	&__description {
 		margin-bottom: 16px;
@@ -60,27 +101,25 @@
 
 	&__read-more {
 		font-family: "Sen";
-		font-size: 18px;
-		line-height: 32px;
+		font-size: 1.125rem;
+		line-height: 177%;
 		text-decoration: none;
 		&:hover {
 			color: $focus-color;
 		}
 	}
 
-	// .about-us__mission
-
 	&__mission {
 		width: 515px;
+
+		@media screen and (max-width: $desktop-width) {			
+			width:80%;
+			margin-right: 0px;
+		}
 	}
 
-	// .about-us__secondary-title
-
 	&__secondary-title {
-		font-family: "Sen";
-		font-size: 28px;
-		line-height: 40px;
-		color: $main-color;
+		@include secondaryTitleFont;
 		margin-bottom: 16px;
 	}
 }

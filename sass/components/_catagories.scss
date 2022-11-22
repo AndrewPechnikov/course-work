@@ -1,7 +1,16 @@
 .catagoryes {
 	display: flex;
 	gap: 32px;
-	// .catagoryes__item
+
+	@media screen and (max-width: $desktop-width) {			
+		gap: 16px;
+	}
+
+	@media screen and (max-width: $tablet-width) {			
+		flex-wrap: wrap;
+		gap: 8px;
+		justify-content: center;
+	}
 
 	&__item {
 		padding: 32px;
@@ -11,9 +20,15 @@
 			background-color: $focus-color;
 			border-color: transparent;
 		}
-	}
 
-	// .catagoryes__icon-container
+		@media screen and (max-width: $desktop-width) {			
+			padding: 15px;
+		}
+
+		@media screen and (max-width: $tablet-width) {			
+			width: 45%;
+		}
+	}
 
 	&__icon-container {
 		display: flex;
@@ -25,13 +40,29 @@
 		border-radius: 16%;
 
 		margin-bottom: 16px;
+
+		@media screen and (max-width: $desktop-width) {			
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 
 	&__title {
-		font-family: "Sen";
-		font-size: 28px;
-		line-height: 40px;
-		color: #232536;
+		@include secondaryTitleFont;
+
 		margin-bottom: 4px;
+
+		@media screen and (max-width: $desktop-width) {			
+			text-align: center;
+		}
 	}
+
+	&__description{
+		@media screen and (max-width: $desktop-width) {			
+			text-align: center;
+		}
+		
+	}
+
+	
 }

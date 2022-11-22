@@ -2,19 +2,21 @@
 	&__container {
 		margin-bottom: 128px;
 		display: flex;
+		@media screen and (max-width:$desktop-width){
+			display:block;
+		}
 	}
 
 	&__title {
-		font-family: "Sen";
-		font-weight: 700;
-		font-size: 36px;
-		line-height: 48px;
-		color: $main-color;
-
-		margin-bottom: 32px;
+		@include titleFont;
+		margin-bottom: 32px;	
 	}
 
 	&__card {
 		margin-right: 32px;
+		@media screen and (max-width:$desktop-width){
+			margin-right: auto;
+			margin-left: auto;
 	}
+}
 }

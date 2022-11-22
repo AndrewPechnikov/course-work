@@ -139,11 +139,22 @@ table {
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 1310px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 798px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 body {
   font-family: "Inter" serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1rem;
+  line-height: 175%;
   color: #6d6e76;
 }
 
@@ -169,20 +180,15 @@ body {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 175%;
 }
-@media screen and (max-width: 798px) {
-  .description {
-    font-size: 13px;
-  }
-}
-
 .author-and-date {
   font-family: "Inter";
   font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.875rem;
+  line-height: 142%;
+  line-height: 125%;
 }
 .author-and-date__name--focus {
   color: #ffd050;
@@ -195,9 +201,8 @@ body {
   font-family: "Inter";
   color: #232536;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  /* identical to box height, or 125% */
+  font-size: 1rem;
+  line-height: 125%;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -205,8 +210,8 @@ body {
 .button {
   font-family: "Sen";
   font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.125rem;
+  line-height: 133%;
   padding: 16px 48px;
   background-color: #ffd050;
   border: 0px;
@@ -253,12 +258,12 @@ body {
 
 .menu {
   display: flex;
-  color: #fff;
+  color: white;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1rem;
+  line-height: 175%;
 }
 .menu__item:not(:last-child) {
   margin-right: 24px;
@@ -288,42 +293,31 @@ body {
 }
 .hero__section-sign {
   font-weight: 500;
-  font-size: 16px;
-  color: #ffffff;
+  font-size: 1rem;
+  color: white;
   margin-bottom: 24px;
 }
 .hero__section-sign--bold {
   font-weight: 900;
 }
-@media screen and (max-width: 798px) {
-  .hero__section-sign {
-    font-size: 13px;
-  }
-}
 .hero__title {
   margin-bottom: 24px;
   font-family: "Sen";
-  font-size: 56px;
+  font-size: 3.5rem;
   line-height: 114%;
   letter-spacing: -2px;
-  color: #ffffff;
+  color: white;
 }
 @media screen and (max-width: 798px) {
   .hero__title {
-    font-size: 26px;
     letter-spacing: -1px;
   }
 }
 .hero__author-and-date {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 175%;
   margin-bottom: 16px;
-}
-@media screen and (max-width: 798px) {
-  .hero__author-and-date {
-    font-size: 13px;
-  }
 }
 .hero__description {
   margin-bottom: 48px;
@@ -333,21 +327,45 @@ body {
   margin-bottom: 128px;
   display: flex;
 }
+@media screen and (max-width: 1310px) {
+  .posts__container {
+    display: block;
+  }
+}
 .posts__title {
   font-family: "Sen";
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 2.25rem;
+  line-height: 133%;
+  /* identical to box height, or 133% */
+  letter-spacing: -2px;
   color: #232536;
   margin-bottom: 32px;
 }
 .posts__card {
   margin-right: 32px;
 }
+@media screen and (max-width: 1310px) {
+  .posts__card {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 .card {
   padding: 32px;
   width: 733px;
+}
+@media screen and (max-width: 798px) {
+  .card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1310px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .card__image {
   width: 100%;
@@ -358,10 +376,15 @@ body {
 }
 .card__title {
   font-family: "Sen";
-  font-size: 28px;
-  line-height: 40px;
-  margin-bottom: 16px;
+  font-size: 1.75rem;
+  line-height: 143%;
+  letter-spacing: -1px;
   color: #232536;
+}
+@media screen and (max-width: 798px) {
+  .card__title {
+    width: 100%;
+  }
 }
 .card__description {
   margin-bottom: 32px;
@@ -371,22 +394,37 @@ body {
 }
 
 .all-posts__main-title-container {
+  font-family: "Sen";
+  font-size: 2.25rem;
+  line-height: 133%;
+  /* identical to box height, or 133% */
+  letter-spacing: -2px;
+  color: #232536;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-bottom: 32px;
 }
-.all-posts__viev-all {
+.all-posts__view-all {
   height: 2rem;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 175%;
   color: #592ea9;
   padding: 0px;
   border: 0px;
   background: none;
 }
-.all-posts__viev-all:hover {
+.all-posts__view-all:hover {
   color: #ffd050;
+}
+@media screen and (max-width: 1310px) {
+  .all-posts__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
 }
 .all-posts__item {
   padding-left: 32px;
@@ -397,12 +435,23 @@ body {
 .all-posts__item:hover {
   background-color: #fbf6ea;
 }
+@media screen and (max-width: 1310px) {
+  .all-posts__item {
+    padding: 32px;
+    width: 350px;
+  }
+}
 .all-posts__title {
   font-family: "Sen";
   font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 2rem;
+  line-height: 133%;
   color: #232536;
+}
+@media screen and (max-width: 1310px) {
+  .all-posts__title {
+    font-size: 1.25rem;
+  }
 }
 
 .about-us__decoration-item {
@@ -422,39 +471,81 @@ body {
   width: 280px;
   right: 0px;
 }
+@media screen and (max-width: 1310px) {
+  .about-us__decoration-item {
+    height: 12px;
+    top: -12px;
+  }
+  .about-us__decoration-item:nth-child(1) {
+    width: 390px;
+    right: 140px;
+  }
+  .about-us__decoration-item:nth-child(2) {
+    width: 140px;
+  }
+}
+@media screen and (max-width: 798px) {
+  .about-us__decoration-item {
+    height: 8px;
+    top: -8px;
+  }
+  .about-us__decoration-item:nth-child(1) {
+    width: 190px;
+    right: 70px;
+  }
+  .about-us__decoration-item:nth-child(2) {
+    width: 70px;
+  }
+}
 .about-us__container {
-  margin-bottom: 128px;
   position: relative;
   display: flex;
-  padding-top: 96px;
+  margin-bottom: 128px;
   padding-right: 108px;
   padding-bottom: 96px;
   padding-left: 80px;
   background-color: #f4f0f8;
 }
+@media screen and (max-width: 1310px) {
+  .about-us__container {
+    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+}
 .about-us__main {
   margin-right: 61px;
-  width: 515px;
+  width: 494px;
+}
+@media screen and (max-width: 1310px) {
+  .about-us__main {
+    width: 80%;
+    margin-right: 0px;
+  }
 }
 .about-us__section-sign {
   margin-bottom: 24px;
 }
 .about-us__title {
   font-family: "Sen";
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 2.25rem;
+  line-height: 133%;
+  /* identical to box height, or 133% */
+  letter-spacing: -2px;
   color: #232536;
   margin-bottom: 16px;
-  /* or 133% */
 }
 .about-us__description {
   margin-bottom: 16px;
 }
 .about-us__read-more {
   font-family: "Sen";
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 1.125rem;
+  line-height: 177%;
   text-decoration: none;
 }
 .about-us__read-more:hover {
@@ -463,10 +554,17 @@ body {
 .about-us__mission {
   width: 515px;
 }
+@media screen and (max-width: 1310px) {
+  .about-us__mission {
+    width: 80%;
+    margin-right: 0px;
+  }
+}
 .about-us__secondary-title {
   font-family: "Sen";
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 1.75rem;
+  line-height: 143%;
+  letter-spacing: -1px;
   color: #232536;
   margin-bottom: 16px;
 }
@@ -477,10 +575,17 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (max-width: 1310px) {
+  .chose-a-catagory__container {
+    margin-bottom: 64px;
+  }
+}
 .chose-a-catagory__title {
   font-family: "Sen";
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 2.25rem;
+  line-height: 133%;
+  /* identical to box height, or 133% */
+  letter-spacing: -2px;
   color: #232536;
   margin-bottom: 48px;
 }
@@ -488,6 +593,18 @@ body {
 .catagoryes {
   display: flex;
   gap: 32px;
+}
+@media screen and (max-width: 1310px) {
+  .catagoryes {
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 798px) {
+  .catagoryes {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
 }
 .catagoryes__item {
   padding: 32px;
@@ -497,6 +614,16 @@ body {
 .catagoryes__item:hover {
   background-color: #ffd050;
   border-color: transparent;
+}
+@media screen and (max-width: 1310px) {
+  .catagoryes__item {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 798px) {
+  .catagoryes__item {
+    width: 45%;
+  }
 }
 .catagoryes__icon-container {
   display: flex;
@@ -508,12 +635,29 @@ body {
   border-radius: 16%;
   margin-bottom: 16px;
 }
+@media screen and (max-width: 1310px) {
+  .catagoryes__icon-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .catagoryes__title {
   font-family: "Sen";
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 1.75rem;
+  line-height: 143%;
+  letter-spacing: -1px;
   color: #232536;
   margin-bottom: 4px;
+}
+@media screen and (max-width: 1310px) {
+  .catagoryes__title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1310px) {
+  .catagoryes__description {
+    text-align: center;
+  }
 }
 
 .special-post__container {
@@ -523,9 +667,21 @@ body {
   justify-content: end;
   height: 705px;
 }
+@media screen and (max-width: 1310px) {
+  .special-post__container {
+    margin-bottom: 64px;
+    height: 550px;
+  }
+}
 .special-post__image {
   position: absolute;
   right: 331px;
+}
+@media screen and (max-width: 1310px) {
+  .special-post__image {
+    right: 150px;
+    height: 550px;
+  }
 }
 .special-post__text-container {
   position: absolute;
@@ -534,13 +690,20 @@ body {
   width: 706px;
   background-color: white;
 }
+@media screen and (max-width: 1310px) {
+  .special-post__text-container {
+    padding: 32px;
+    width: 500px;
+    top: 100px;
+  }
+}
 .special-post__section-sign {
   margin-bottom: 24px;
 }
 .special-post__title {
   font-family: "Sen";
-  font-size: 48px;
-  line-height: 64px;
+  font-size: 3rem;
+  line-height: 133%;
   letter-spacing: -2px;
   color: #232536;
   margin-bottom: 16px;
@@ -554,8 +717,9 @@ body {
 }
 .list-of-authors__title {
   font-family: "Sen";
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 2.25rem;
+  line-height: 133%;
+  /* identical to box height, or 133% */
   letter-spacing: -2px;
   color: #232536;
   margin-bottom: 48px;
@@ -582,15 +746,15 @@ body {
 }
 .author-cards__title {
   font-family: "Sen";
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 1.75rem;
+  line-height: 143%;
   letter-spacing: -1px;
   color: #232536;
 }
 .author-cards__position {
   font-family: "Inter";
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.875rem;
+  line-height: 142%;
   color: #6d6e76;
   padding: 0;
   margin-bottom: 20px;
@@ -624,15 +788,15 @@ body {
 }
 .feature__sign {
   font-family: "Inter";
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.875rem;
+  line-height: 142%;
   color: #6d6e76;
   opacity: 0.6;
 }
 .feature__title {
   font-family: "Sen";
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 133%;
   color: #6d6e76;
 }
 .feature__icon {
@@ -653,14 +817,14 @@ body {
 }
 .reviewer__name {
   font-family: "Sen";
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 133%;
   color: #232536;
 }
 .reviewer__adress {
   font-family: "Inter";
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1rem;
+  line-height: 175%;
   color: #6d6e76;
 }
 .reviewer__text-content {
@@ -680,15 +844,15 @@ body {
   padding-right: 84px;
   width: 434px;
   border-right: 1px solid rgba(109, 110, 118, 0.4);
-  /* Medium grey */
 }
 .reviews__section-sign {
   margin-bottom: 12px;
 }
 .reviews__title {
   font-family: "Sen";
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 2.25rem;
+  line-height: 133%;
+  /* identical to box height, or 133% */
   letter-spacing: -2px;
   color: #232536;
   margin-bottom: 16px;
@@ -700,8 +864,8 @@ body {
 }
 .reviews__review {
   font-family: "Sen";
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 133%;
   color: #232536;
   margin-bottom: 121px;
   width: 465px;
@@ -739,16 +903,18 @@ body {
 .join__container {
   text-align: center;
   margin-bottom: 128px;
-  width: 415px;
+  width: 444px;
   margin-left: auto;
   margin-right: auto;
 }
 .join__title {
   font-family: "Sen";
-  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 133%;
+  /* identical to box height, or 133% */
   letter-spacing: -2px;
-  /* Black */
   color: #232536;
+  width: 100%;
   margin-bottom: 16px;
 }
 .join__description {
@@ -762,11 +928,13 @@ body {
 }
 .form__title {
   font-family: "Sen";
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 2.25rem;
+  line-height: 133%;
+  /* identical to box height, or 133% */
+  letter-spacing: -2px;
+  color: #232536;
   color: white;
   margin-right: 64px;
-  letter-spacing: -2px;
   width: 562px;
 }
 .form__input-email {
@@ -777,10 +945,9 @@ body {
   padding: 14px 25px;
   margin-right: 24px;
   font-family: "Inter";
-  font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1rem;
+  line-height: 175%;
 }
 .form__button {
   height: 56px;
@@ -810,9 +977,9 @@ body {
 }
 .footer__contacts {
   font-family: "Inter";
-  font-size: 16px;
-  line-height: 28px;
-  color: #ffffff;
+  font-size: 1rem;
+  line-height: 175%;
+  color: white;
   opacity: 0.7;
   grid-column-start: 1;
   grid-column-end: 2;

@@ -13,10 +13,8 @@
 	&__main-content {
 		padding-right: 84px;
 		width: 434px;
-
 		border-right: 1px solid rgba($color: #6d6e76, $alpha: 0.4);
 
-		/* Medium grey */
 	}
 
 	&__section-sign {
@@ -24,14 +22,10 @@
 	}
 
 	&__title {
-		font-family: "Sen";
-		font-size: 36px;
-		line-height: 48px;
-		letter-spacing: -2px;
-		color: #232536;
+		@include titleFont;
 		margin-bottom: 16px;
 	}
-	// .reviews__secondary-content
+
 
 	&__secondary-content {
 		padding-left: 96px;
@@ -39,24 +33,20 @@
 		flex-direction: column;
 	}
 
-	// .reviews__review
 
 	&__review {
 		font-family: "Sen";
-		font-size: 24px;
-		line-height: 32px;
-		color: #232536;
+		font-size: 1.5rem;
+		line-height: 133%;
+		color: $main-color;
 		margin-bottom: 121px;
 		width: 465px;
 	}
 
-	// .reviews__reviewer
 
 	&__reviewer {
 		display: flex;
 	}
-
-	// .reviews__arrow-left
 
 	&__arrow-container {
 		width: 48px;
@@ -88,6 +78,4 @@
 			fill: #fff;
 		}
 	}
-
-	// .reviews__arrow-right
 }

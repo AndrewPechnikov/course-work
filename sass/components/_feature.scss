@@ -1,5 +1,4 @@
 .feature {
-	// .feature__container
 
 	&__container {
 		margin-bottom: 96px;
@@ -9,31 +8,25 @@
 		align-items: center;
 	}
 
-	// .feature__sign
-
 	&__text-content {
 		margin-left: 14px;
 	}
 
 	&__sign {
 		font-family: "Inter";
-		font-size: 14px;
-		line-height: 20px;
-		color: #6d6e76;
+		font-size: 0.875rem;
+		line-height: 142%;
+		color: $main-text-color;
 		opacity: 0.6;
 	}
 
-	// .feature__title
-
 	&__title {
 		font-family: "Sen";
-		font-size: 24px;
-		line-height: 32px;
+		font-size: 1.5rem;
+		line-height: 133%;
 
-		color: #6d6e76;
+		color: $main-text-color;
 	}
-
-	// .feature__icon
 
 	&__icon {
 		opacity: 0.8;

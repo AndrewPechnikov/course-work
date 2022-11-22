@@ -1,20 +1,16 @@
 .form {
-	// .form__title
+
 	padding: 80px 64px;
 	display: flex;
-	background: rgba($color: #fff, $alpha: 0.05);
+	background: rgba($color: white, $alpha: 0.05);
 
 	&__title {
-		font-family: "Sen";
-		font-size: 36px;
-		line-height: 48px;
+		@include titleFont;
 		color: white;
 		margin-right: 64px;
-		letter-spacing: -2px;
+	
 		width: 562px;
 	}
-
-	// .form__input-email
 
 	&__input-email {
 		width: 323px;
@@ -26,10 +22,9 @@
 		margin-right: 24px;
 
 		font-family: "Inter";
-		font-style: normal;
 		font-weight: 400;
-		font-size: 16px;
-		line-height: 28px;
+		font-size: 1rem;
+		line-height: 175%;
 	}
 
 	&__button {

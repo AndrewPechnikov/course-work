@@ -1,17 +1,19 @@
 .all-posts {
-	// .all-posts__main-title-container
 
 	&__main-title-container {
+		@include titleFont;
+
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
+		margin-bottom: 32px;
 	}
 
-	&__viev-all {
+	&__view-all {
 		height: 2rem;
-		font-size: 16px;
+		font-size: 1rem;
 		font-weight: 400;
-		line-height: 28px;
+		line-height: 175%;
 		color: $purple-color;
 		padding: 0px;
 		border: 0px;
@@ -22,12 +24,14 @@
 		}
 	}
 
-	// .all-posts__list
-
 	&__list {
+		@media screen and (max-width:$desktop-width){
+			display:flex;
+			flex-wrap: wrap;
+			gap: 25px	;
+			justify-content:center;
+		}
 	}
-
-	// .all-posts__item
 
 	&__item {
 		padding-left: 32px;
@@ -37,15 +41,23 @@
 		&:hover {
 			background-color: $secondary-focus-color;
 		}
-	}
 
-	// .all-posts__title
+		@media screen and (max-width:$desktop-width){
+			padding: 32px;
+			width: 350px;
+			
+		}
+	}
 
 	&__title {
 		font-family: "Sen";
 		font-weight: 700;
-		font-size: 24px;
-		line-height: 32px;
+		font-size: 2rem;
+		line-height: 133%;
 		color: $main-color;
+
+		@media screen and (max-width:$desktop-width){
+			font-size: 1.25rem;					
+		}
 	}
 }
