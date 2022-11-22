@@ -693,8 +693,7 @@ body {
 @media screen and (max-width: 1310px) {
   .special-post__text-container {
     padding: 32px;
-    width: 500px;
-    top: 100px;
+    width: 550px;
   }
 }
 .special-post__section-sign {
