@@ -1,6 +1,9 @@
 .list-of-authors {
 	&__container {
 		margin-bottom: 96px;
+		@media screen and (max-width: $desktop-width) {
+			margin-bottom: 64px;
+		}
 	}
 
 	&__title {

@@ -698,9 +698,17 @@ body {
     height: 550px;
   }
 }
+@media screen and (max-width: 798px) {
+  .special-post__image {
+    right: 16px;
+    height: 450px;
+  }
+}
 .special-post__text-container {
   position: absolute;
   top: 121px;
+  display: flex;
+  flex-direction: column;
   padding: 80px;
   width: 706px;
   background-color: white;
@@ -710,6 +718,14 @@ body {
     padding: 32px;
     width: 550px;
     top: 104px;
+  }
+}
+@media screen and (max-width: 798px) {
+  .special-post__text-container {
+    padding: 16px;
+    width: 100%;
+    top: 16px;
+    background-color: rgba(255, 255, 255, 0.85);
   }
 }
 .special-post__section-sign {
@@ -726,9 +742,20 @@ body {
 .special-post__description {
   margin-bottom: 32px;
 }
+@media screen and (max-width: 798px) {
+  .special-post__button {
+    width: 235px;
+    align-self: center;
+  }
+}
 
 .list-of-authors__container {
   margin-bottom: 96px;
+}
+@media screen and (max-width: 1310px) {
+  .list-of-authors__container {
+    margin-bottom: 64px;
+  }
 }
 .list-of-authors__title {
   font-family: "Sen";
@@ -818,6 +845,7 @@ body {
     flex-wrap: wrap;
     gap: 0;
     justify-content: space-between;
+    margin-bottom: 64px;
   }
 }
 .feature__text-content {
@@ -888,6 +916,11 @@ body {
 .reviewer__text-content {
   margin-right: 141px;
 }
+@media screen and (max-width: 1310px) {
+  .reviewer__text-content {
+    margin-right: auto;
+  }
+}
 
 .reviews__container {
   background-color: #fbf6ea;
@@ -896,12 +929,35 @@ body {
   padding-top: 80px;
   padding-left: 112px;
   padding-bottom: 75px;
-  padding-right: 108p;
+  padding-right: 108px;
+}
+@media screen and (max-width: 1310px) {
+  .reviews__container {
+    padding: 64px;
+    flex-direction: column;
+    margin-bottom: 64px;
+  }
+}
+@media screen and (max-width: 798px) {
+  .reviews__container {
+    padding: 32px;
+  }
 }
 .reviews__main-content {
   padding-right: 84px;
   width: 434px;
   border-right: 1px solid rgba(109, 110, 118, 0.4);
+}
+@media screen and (max-width: 1310px) {
+  .reviews__main-content {
+    padding-right: 0px;
+    width: 100%;
+    text-align: center;
+    border-right: 0px;
+    border-bottom: 1px solid rgba(109, 110, 118, 0.4);
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
 }
 .reviews__section-sign {
   margin-bottom: 12px;
@@ -920,6 +976,12 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 1310px) {
+  .reviews__secondary-content {
+    padding-left: 0px;
+    text-align: center;
+  }
+}
 .reviews__review {
   font-family: "Sen";
   font-size: 1.5rem;
@@ -927,6 +989,12 @@ body {
   color: #232536;
   margin-bottom: 121px;
   width: 465px;
+}
+@media screen and (max-width: 1310px) {
+  .reviews__review {
+    width: 100%;
+    margin-bottom: 32px;
+  }
 }
 .reviews__reviewer {
   display: flex;
@@ -946,6 +1014,11 @@ body {
 .reviews__arrow-container:nth-child(2n) {
   margin-left: 32px;
 }
+@media screen and (max-width: 798px) {
+  .reviews__arrow-container:nth-child(2n) {
+    margin-left: 16px;
+  }
+}
 .reviews__arrow {
   fill: #232536;
   transition: 250ms;
@@ -964,6 +1037,11 @@ body {
   width: 444px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 1310px) {
+  .join__container {
+    margin-bottom: 64px;
+  }
 }
 .join__title {
   font-family: "Sen";

@@ -7,14 +7,30 @@
 		padding-top: 80px;
 		padding-left: 112px;
 		padding-bottom: 75px;
-		padding-right: 108p;
+		padding-right: 108px;
+		@media screen and (max-width: $desktop-width) {
+			padding: 64px;
+			flex-direction: column;
+			margin-bottom: 64px;
+		}
+		@media screen and (max-width: $tablet-width) {
+			padding: 32px;
+		}
 	}
 
 	&__main-content {
 		padding-right: 84px;
 		width: 434px;
 		border-right: 1px solid rgba($color: #6d6e76, $alpha: 0.4);
-
+		@media screen and (max-width: $desktop-width) {
+			padding-right: 0px;
+			width: 100%;
+			text-align: center;
+			border-right: 0px;
+			border-bottom: 1px solid rgba($color: #6d6e76, $alpha: 0.4);
+			padding-bottom: 32px;
+			margin-bottom: 32px;
+		}
 	}
 
 	&__section-sign {
@@ -26,13 +42,15 @@
 		margin-bottom: 16px;
 	}
 
-
 	&__secondary-content {
 		padding-left: 96px;
 		display: flex;
 		flex-direction: column;
+		@media screen and (max-width: $desktop-width) {
+			padding-left: 0px;
+			text-align: center;
+		}
 	}
-
 
 	&__review {
 		font-family: "Sen";
@@ -40,9 +58,13 @@
 		line-height: 133%;
 		color: $main-color;
 		margin-bottom: 121px;
-		width: 465px;
-	}
 
+		width: 465px;
+		@media screen and (max-width: $desktop-width) {
+			width: 100%;
+			margin-bottom: 32px;
+		}
+	}
 
 	&__reviewer {
 		display: flex;
@@ -63,6 +85,9 @@
 
 		&:nth-child(2n) {
 			margin-left: 32px;
+			@media screen and (max-width: $tablet-width) {
+				margin-left: 16px;
+			}
 		}
 	}
 

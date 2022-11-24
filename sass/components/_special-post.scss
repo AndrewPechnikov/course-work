@@ -20,11 +20,19 @@
 			right: 75px;
 			height: 550px;
 		}
+
+		@media screen and (max-width: $tablet-width) {
+			right: 16px;
+			height: 450px;
+		}
 	}
 
 	&__text-container {
 		position: absolute;
 		top: 121px;
+
+		display: flex;
+		flex-direction: column;
 
 		padding: 80px;
 		width: 706px;
@@ -34,6 +42,13 @@
 			padding: 32px;
 			width: 550px;
 			top: 104px;
+		}
+
+		@media screen and (max-width: $tablet-width) {
+			padding: 16px;
+			width: 100%;
+			top: 16px;
+			background-color: rgba($color: #fff, $alpha: 0.85);
 		}
 	}
 
@@ -53,5 +68,12 @@
 
 	&__description {
 		margin-bottom: 32px;
+	}
+
+	&__button {
+		@media screen and (max-width: $tablet-width) {
+			width: 235px;
+			align-self: center;
+		}
 	}
 }

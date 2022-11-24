@@ -5,9 +5,11 @@
 		width: 444px;
 		margin-left: auto;
 		margin-right: auto;
-	}
 
-	// .join__title
+		@media screen and (max-width: $desktop-width) {
+			margin-bottom: 64px;
+		}
+	}
 
 	&__title {
 		@include titleFont;
@@ -15,8 +17,6 @@
 
 		margin-bottom: 16px;
 	}
-
-	// .join__description
 
 	&__description {
 		margin-bottom: 32px;

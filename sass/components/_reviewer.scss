@@ -30,5 +30,8 @@
 
 	&__text-content {
 		margin-right: 141px;
+		@media screen and (max-width: $desktop-width) {
+			margin-right: auto;
+		}
 	}
 }
