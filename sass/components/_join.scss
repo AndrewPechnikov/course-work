@@ -9,6 +9,9 @@
 		@media screen and (max-width: $desktop-width) {
 			margin-bottom: 64px;
 		}
+		@media screen and (max-width: $tablet-width) {
+			width: 300px;
+		}
 	}
 
 	&__title {

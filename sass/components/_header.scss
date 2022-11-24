@@ -6,6 +6,9 @@
 
 		justify-content: center;
 		align-items: center;
+		@media screen and(max-width:$tablet-width) {
+			display: none;
+		}
 	}
 
 	&__logo {

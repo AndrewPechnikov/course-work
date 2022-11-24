@@ -29,6 +29,23 @@
 				</nav>
 				<button class="button button--white header__button">Subscribe</button>
 			</div>
+			<div class="wrapper container">
+				<img class="header__logo logo" src="img\Logo.svg" alt="" />
+
+				<input type="checkbox" id="checkbox-menu" />
+				<label for="checkbox-menu"></label>
+				<div class="hamburger-line hamburger-line--first"></div>
+				<div class="hamburger-line hamburger-line--second"></div>
+				<div class="hamburger-line hamburger-line--third"></div>
+				<div class="hamburger-line hamburger-line--fourth"></div>
+
+				<nav class="hamburger-menu">
+					<li class="hamburger-menu__item">Home</li>
+					<li class="hamburger-menu__item">Blog</li>
+					<li class="hamburger-menu__item">About Us</li>
+					<li class="hamburger-menu__item">Contact us</li>
+				</nav>
+			</div>
 		</header>
 
 		<main>
@@ -594,5 +611,16 @@
 				</ul>
 			</div>
 		</footer>
+
+		<script>
+			function myFunction() {
+				var x = document.getElementById('myLinks');
+				if (x.style.display === 'block') {
+					x.style.display = 'none';
+				} else {
+					x.style.display = 'block';
+				}
+			}
+		</script>
 	</body>
 </html>
