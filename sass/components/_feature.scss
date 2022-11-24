@@ -6,17 +6,19 @@
 		gap: 75px;
 		align-items: center;
 		@media screen and (max-width: $desktop-width) {
-			// flex-wrap: wrap;
-			gap: 25px;
 			flex-wrap: wrap;
+			gap: 0;
+			justify-content: space-between;
 		}
 	}
 
 	&__text-content {
-		width: 100%;
-		text-align: center;
-		flex-shrink: 0;
 		margin-left: 14px;
+		@media screen and (max-width: $desktop-width) {
+			width: 100%;
+			text-align: center;
+			flex-shrink: 0;
+		}
 	}
 
 	&__sign {
@@ -48,6 +50,14 @@
 			opacity: 0.9;
 			transform: scale(1.25);
 			transition: 250ms;
+		}
+
+		@media screen and (max-width: $desktop-width) {
+			width: 130px;
+			margin-top: 32px;
+			&:hover {
+				transform: scale(1.1);
+			}
 		}
 	}
 }

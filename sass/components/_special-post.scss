@@ -1,5 +1,4 @@
 .special-post {
-
 	&__container {
 		margin-bottom: 128px;
 
@@ -8,18 +7,17 @@
 		justify-content: end;
 		height: 705px;
 
-		@media screen and (max-width: $desktop-width) {			
+		@media screen and (max-width: $desktop-width) {
 			margin-bottom: 64px;
 			height: 550px;
 		}
 	}
 
-
 	&__image {
 		position: absolute;
 		right: 331px;
-		@media screen and (max-width: $desktop-width) {			
-			right: 150px;
+		@media screen and (max-width: $desktop-width) {
+			right: 75px;
 			height: 550px;
 		}
 	}
@@ -27,15 +25,15 @@
 	&__text-container {
 		position: absolute;
 		top: 121px;
-		
+
 		padding: 80px;
 		width: 706px;
 		background-color: white;
-		
-		@media screen and (max-width: $desktop-width) {			
+
+		@media screen and (max-width: $desktop-width) {
 			padding: 32px;
 			width: 550px;
-			// top:
+			top: 104px;
 		}
 	}
 
