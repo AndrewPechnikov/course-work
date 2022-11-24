@@ -1062,6 +1062,17 @@ body {
   display: flex;
   background: rgba(255, 255, 255, 0.05);
 }
+@media screen and (max-width: 1310px) {
+  .form {
+    padding: 40px 40px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 798px) {
+  .form {
+    flex-direction: column;
+  }
+}
 .form__title {
   font-family: "Sen";
   font-size: 2.25rem;
@@ -1071,7 +1082,20 @@ body {
   color: #232536;
   color: white;
   margin-right: 64px;
-  width: 562px;
+}
+@media screen and (max-width: 1310px) {
+  .form__title {
+    font-size: 1.3rem;
+    margin-right: 16px;
+    letter-spacing: 0;
+  }
+}
+@media screen and (max-width: 798px) {
+  .form__title {
+    margin-bottom: 16px;
+    margin-right: 0px;
+    text-align: center;
+  }
 }
 .form__input-email {
   width: 323px;
@@ -1084,6 +1108,17 @@ body {
   font-weight: 400;
   font-size: 1rem;
   line-height: 175%;
+}
+@media screen and (max-width: 1310px) {
+  .form__input-email {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 798px) {
+  .form__input-email {
+    margin-bottom: 16px;
+    margin-right: 0px;
+  }
 }
 .form__button {
   height: 56px;
@@ -1098,12 +1133,36 @@ body {
   grid-template-rows: 2fr 55px 255px 48px 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 }
+@media screen and (max-width: 1310px) {
+  .footer__container {
+    padding: 32px 0;
+    grid-template-rows: 1fr 32px 155px 32px 1fr 1fr;
+  }
+}
+@media screen and (max-width: 798px) {
+  .footer__container {
+    padding: 32px 0;
+    grid-template-rows: 1fr 32px 255px 32px 16px 16px;
+  }
+}
 .footer__logo {
   align-items: center;
+}
+@media screen and (max-width: 798px) {
+  .footer__logo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+  }
 }
 .footer__menu {
   align-items: center;
   justify-content: end;
+}
+@media screen and (max-width: 798px) {
+  .footer__menu {
+    display: none;
+  }
 }
 .footer__form {
   grid-row-start: 3;
@@ -1119,6 +1178,11 @@ body {
   opacity: 0.7;
   grid-column-start: 1;
   grid-column-end: 2;
+}
+@media screen and (max-width: 798px) {
+  .footer__contacts {
+    font-size: 0.75rem;
+  }
 }
 .footer__contacts-1 {
   grid-row-start: 5;

@@ -1,5 +1,4 @@
 .footer {
-
 	background-color: $main-color;
 
 	&__container {
@@ -7,15 +6,31 @@
 		display: grid;
 		grid-template-rows: 2fr 55px 255px 48px 1fr 1fr;
 		grid-template-columns: 1fr 1fr;
+		@media screen and (max-width: $desktop-width) {
+			padding: 32px 0;
+			grid-template-rows: 1fr 32px 155px 32px 1fr 1fr;
+		}
+		@media screen and (max-width: $tablet-width) {
+			padding: 32px 0;
+			grid-template-rows: 1fr 32px 255px 32px 16px 16px;
+		}
 	}
 
 	&__logo {
 		align-items: center;
+		@media screen and (max-width: $tablet-width) {
+			grid-column-start: 1;
+			grid-column-end: 3;
+			justify-self: center;
+		}
 	}
 
 	&__menu {
 		align-items: center;
 		justify-content: end;
+		@media screen and (max-width: $tablet-width) {
+			display: none;
+		}
 	}
 
 	&__form {
@@ -34,6 +49,10 @@
 
 		grid-column-start: 1;
 		grid-column-end: 2;
+
+		@media screen and (max-width: $tablet-width) {
+			font-size: 0.75rem;
+		}
 	}
 
 	&__contacts-1 {

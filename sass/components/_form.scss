@@ -1,15 +1,30 @@
 .form {
-
 	padding: 80px 64px;
 	display: flex;
 	background: rgba($color: white, $alpha: 0.05);
+	@media screen and (max-width: $desktop-width) {
+		padding: 40px 40px;
+		align-items: center;
+	}
+	@media screen and (max-width: $tablet-width) {
+		flex-direction: column;
+	}
 
 	&__title {
 		@include titleFont;
 		color: white;
 		margin-right: 64px;
-	
-		width: 562px;
+
+		@media screen and (max-width: $desktop-width) {
+			font-size: 1.3rem;
+			margin-right: 16px;
+			letter-spacing: 0;
+		}
+		@media screen and (max-width: $tablet-width) {
+			margin-bottom: 16px;
+			margin-right: 0px;
+			text-align: center;
+		}
 	}
 
 	&__input-email {
@@ -25,6 +40,15 @@
 		font-weight: 400;
 		font-size: 1rem;
 		line-height: 175%;
+
+		@media screen and (max-width: $desktop-width) {
+			width: 250px;
+		}
+
+		@media screen and (max-width: $tablet-width) {
+			margin-bottom: 16px;
+			margin-right: 0px;
+		}
 	}
 
 	&__button {
